@@ -59,6 +59,8 @@ namespace RPG.Combat
         // Animation Controller
         void Hit()
         {
+            if (target == null)
+                return;
             target.TakeDamage(weaponDamage);//TODO:
         }
 
