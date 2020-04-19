@@ -338,3 +338,8 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/.vscode
+/Temp
+/ProjectSettings
+/Library
+/Assets/Asset Packs
