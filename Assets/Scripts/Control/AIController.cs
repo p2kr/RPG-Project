@@ -6,15 +6,19 @@ namespace RPG.Control
 {
     public class AIController : MonoBehaviour
     {
-        [SerializeField] float chaseDistance = 5f;
+        [SerializeField] float chaseDistance = 5.0f;
         private void Update()
         {
-            GameObject player = GameObject.FindWithTag("Player");
-            float distance = Vector3.Distance(player.transform.position, transform.position);
-            if (distance < chaseDistance)
+            if (DistanceToPlayer() < chaseDistance)
             {
-                print(transform.name + " will chase");
+                print(gameObject.name + " should chase");
             }
+        }
+
+        private float DistanceToPlayer()
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            return Vector3.Distance(player.transform.position, transform.position);
         }
     }
 
