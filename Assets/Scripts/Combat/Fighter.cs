@@ -48,6 +48,7 @@ namespace RPG.Combat
 
         }
 
+        // Animation Controller
         void Hit()
         {
             Health healthComponent = target.GetComponent<Health>();
@@ -68,9 +69,10 @@ namespace RPG.Combat
         public void Cancel()
         {
             target = null;
+            animator.SetTrigger("stopAttack");// My attack stopping code
         }
 
-        // Animation Controller
+        
 
     }
 }

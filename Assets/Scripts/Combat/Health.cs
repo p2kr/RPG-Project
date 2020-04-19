@@ -6,15 +6,23 @@ namespace RPG.Combat
     {
         [SerializeField] float healthPoints = 100.0f;
         bool isDead = false;
+        public bool IsDead => isDead;
         public void TakeDamage(float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             print(healthPoints);
-            if (healthPoints <= 0 && !isDead)
+            if (healthPoints <= 0)
             {
-                GetComponent<Animator>().SetTrigger("die");
-                isDead = true;
+                Die();
             }
+        }
+
+        private void Die()
+        {
+            if (isDead)
+                return;
+            isDead = true;
+            GetComponent<Animator>().SetTrigger("die");
         }
     }
 }
