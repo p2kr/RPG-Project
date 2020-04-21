@@ -2,6 +2,7 @@
 using UnityEngine.AI;
 using RPG.Movement;
 using System;
+using RPG.Core;
 using RPG.Combat;
 
 namespace RPG.Control
@@ -9,13 +10,16 @@ namespace RPG.Control
     public class PlayerController : MonoBehaviour
     {
         NavMeshAgent agent;
+        Health health;
 
         private void Start()
         {
             agent = GetComponent<NavMeshAgent>();
+            health = GetComponent<Health>();
         }
         private void Update()
         {
+            if (health.IsDead) return;
             if (InteractWithCombat())
                 return;
             if (InteractWithMovement())
