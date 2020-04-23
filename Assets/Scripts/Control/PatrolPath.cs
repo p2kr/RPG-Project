@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatrolPath : MonoBehaviour
+namespace RPG.Control
 {
-    // Start is called before the first frame update
-    void Start()
+    public class PatrolPath : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        const float waypointGizmoRadius = 0.1f;
+        private void OnDrawGizmos()
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawSphere(transform.GetChild(i).position, waypointGizmoRadius);
+            }
+        }
     }
 }
