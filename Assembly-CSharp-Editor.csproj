@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{D13F1F08-7D56-F4AE-B9EA-2B9271D6FB00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -64,6 +63,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\BoxophobicUtils\Editor\GetBoxophobicFolder.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\Constants\Editor\Constants.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\SettingsUtils\Editor\LoadSettingsData.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\SettingsUtils\Editor\SaveSettingsData.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledGUI\Editor\DrawInspectorBanner.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledGUI\Editor\DrawInspectorCategory.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledGUI\Editor\DrawWindowBanner.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledGUI\Editor\DrawWindowCategory.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledBannerDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledCategoryDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledInteractiveDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledMessageDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledPopupArrayDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledPopupLayersDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledRangeOptionsDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledSpaceDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\Editor\StyledTexturePreviewDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMaterial\Editor\StyledBannerDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMaterial\Editor\StyledCategoryDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMaterial\Editor\StyledDiffusionMaterialDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMaterial\Editor\StyledInteractiveDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMaterial\Editor\StyledMessageDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMaterial\Editor\StyledSpaceDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMono\Editor\StyledMonoBehaviourEditor.cs" />
+    <Compile Include="Assets\Asset Packs\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Asset Packs\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
+    <Compile Include="Assets\Asset Packs\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
+    <Compile Include="Assets\Asset Packs\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
+    <Compile Include="Assets\Asset Packs\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
+    <Compile Include="Assets\Asset Packs\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/UNITY FILES/RPG Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -96,6 +125,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/UNITY FILES/RPG Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/UNITY FILES/RPG Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/UNITY FILES/RPG Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -273,12 +308,6 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>D:/UNITY FILES/RPG Project/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-Editor-firstpass">
-      <HintPath>D:/UNITY FILES/RPG Project/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.VR">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.9f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
