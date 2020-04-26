@@ -1,8 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
-public class CinematicTrigger : MonoBehaviour
+namespace RPG.Cinematics
 {
-    
+    public class CinematicTrigger : MonoBehaviour
+    {
+        bool alreadyTriggered = false;
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "Player" && !alreadyTriggered)
+            {
+                alreadyTriggered = true;
+                GetComponent<PlayableDirector>().Play();
+            }
+        }
+    }
 }
