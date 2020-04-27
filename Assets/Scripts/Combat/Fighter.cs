@@ -87,6 +87,7 @@ namespace RPG.Combat
         {
             target = null;
             StopAttack();
+            GetComponent<Mover>().Cancel(); // Bug Encoutered when playing cinematic
         }
 
         private void StopAttack()
